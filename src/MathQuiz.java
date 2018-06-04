@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-import static java.lang.Math.*;
-
-
 public class MathQuiz {
     Scanner input = new Scanner(System.in);
 
@@ -14,10 +11,10 @@ public class MathQuiz {
         System.out.println(a);
         int a1 = 3 * 5;
 
-        if (a == false) {
+        if (!a) {
             System.out.println("Zła odpowiedź, poprawna to : " + a1);
         } else {
-            System.out.println("Gratulacje !!");
+            System.out.println("Gratulacje !! poprawna odpowiedź to 15");
         }
 
     }
@@ -30,10 +27,10 @@ public class MathQuiz {
         boolean b = answer2 == 12 * 12;
         System.out.println(b);
         int b1 = 12 * 12;
-        if (b == false) {
+        if (!b) {
             System.out.println("Zła odpowiedź, poprawna to: " + b1);
         } else {
-            System.out.println("Gratulacje!!");
+            System.out.println("Gratulacje!! poprawna odpowiedź to "+12*12);
         }
 
     }
@@ -45,14 +42,16 @@ public class MathQuiz {
         boolean c = answer3 == Math.sqrt(15129.00);
         System.out.println(c);
         double c1 = Math.sqrt(15129.00);
-        if (c == false) {
+        if (!c) {
             System.out.println("Zła odpowiedź, poprawna to: " + c1);
         } else {
-            System.out.println("Gratulacje !!");
+            System.out.println("Gratulacje !! poprawan odpowiedź to 123");
         }
 
 
     }
+
+
 
 
 }
