@@ -15,12 +15,14 @@ public class MathQuiz {
             System.out.println("Zła odpowiedź, poprawna to : " + a1);
         } else {
             System.out.println("Gratulacje !! poprawna odpowiedź to 15");
+
+
         }
 
-    }
-
-
-    void question2() {
+//    }
+//
+//
+//     void question2() {
 
         System.out.println("Jakie jest pole kwadratu o boku 12 ?");
         int answer2 = input.nextInt();
@@ -30,12 +32,12 @@ public class MathQuiz {
         if (!b) {
             System.out.println("Zła odpowiedź, poprawna to: " + b1);
         } else {
-            System.out.println("Gratulacje!! poprawna odpowiedź to "+12*12);
+            System.out.println("Gratulacje!! poprawna odpowiedź to " + 12 * 12);
         }
 
-    }
-
-    void question3() {
+//    }
+//
+//    void question3() {
 
         System.out.println("Jaki jest pierwiastek kwadratowy z liczby 15129 ?");
         int answer3 = input.nextInt();
@@ -47,13 +49,28 @@ public class MathQuiz {
         } else {
             System.out.println("Gratulacje !! poprawan odpowiedź to 123");
         }
+        if (answer1 == 15 && answer2 == 144 && answer3 == 123) {
+            System.out.println("3/3");
+
+        } else if (answer1 == 15 && answer2 == 144 || answer3 == 123 && answer2 == 144 || answer1 == 15 && answer3 == 123) {
+            System.out.println("2/3");
+
+        }else  if (answer1 == 15 || answer2 == 144 || answer3 == 123) {
+            System.out.println("1/3");
+
+        } else System.out.println("0/3");
 
 
     }
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
 
 
